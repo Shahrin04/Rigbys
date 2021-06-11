@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/registration_pic"
+    tools:context=".Buyer.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/register_applogo"
+        android:layout_width="600dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/applogo"
+        />
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/register_applogo"
+        android:hint="Name..."
+        android:textSize="40sp"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:inputType="text"
+        android:background="@drawable/background_box"
+        android:paddingStart="15dp"
+        android:drawablePadding="15dp"
+        />
+
+    <EditText
+        android:id="@+id/register_input_phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/register_name"
+        android:hint="Phone Number..."
+        android:textSize="40sp"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:inputType="phone"
+        android:background="@drawable/background_box"
+        android:paddingStart="15dp"
+        android:drawablePadding="15dp"
+        android:maxLength="11"
+        />
+
+    <EditText
+        android:id="@+id/register_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/register_input_phoneNumber"
+        android:hint="Your Password..."
+        android:textColor="@color/purple_500"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:inputType="textPassword"
+        android:background="@drawable/background_box"
+        android:paddingStart="15dp"
+        android:drawablePadding="15dp"
+        />
+
+    <Button
+        android:id="@+id/register_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/register_input_password"
+        android:background="@drawable/buttons"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        />
+
+</RelativeLayout>

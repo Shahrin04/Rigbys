@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "834530020552",
+    "project_id": "rigby-s",
+    "storage_bucket": "rigby-s.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834530020552:android:a6230f62d3dc4f0337a9fd",
+        "android_client_info": {
+          "package_name": "com.example.rigbys"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834530020552-6oriehva0b9pqkqmfbsjnrmiaf5blope.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rigbys",
+            "certificate_hash": "17ad53d655f7936945fb4787c9c7cee6795b0094"
+          }
+        },
+        {
+          "client_id": "834530020552-ko8ir023t1a2dqtdubbd43tvv7etu372.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWLx9zBgnrBYJTlHY6vuzUw3W6MN2_ze0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834530020552-ko8ir023t1a2dqtdubbd43tvv7etu372.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

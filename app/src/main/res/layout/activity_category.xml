@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyer.CategoryActivity">
+
+    <TextView
+        android:id="@+id/category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Select Product"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/category_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_title">
+
+        <ImageView
+            android:id="@+id/male_dress"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/male_dress" />
+
+        <ImageView
+            android:id="@+id/sports_dress"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/sports_dress" />
+
+        <ImageView
+            android:id="@+id/female_dress"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/female_dress" />
+
+        <ImageView
+            android:id="@+id/winter_dress"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/winter_dress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/category_linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_linear1">
+
+        <ImageView
+            android:id="@+id/glasses"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/sunglasses" />
+
+        <ImageView
+            android:id="@+id/female_bags"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/female_bag" />
+
+        <ImageView
+            android:id="@+id/hats"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/hat" />
+
+        <ImageView
+            android:id="@+id/shoes"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/shoe" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/category_linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_linear2">
+
+        <ImageView
+            android:id="@+id/headphones"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/headphone" />
+
+        <ImageView
+            android:id="@+id/computer"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/laptop" />
+
+        <ImageView
+            android:id="@+id/watches"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/watch" />
+
+        <ImageView
+            android:id="@+id/mobiles"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/mobile" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

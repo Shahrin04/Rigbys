@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:elevation="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/design_default_color_primary"
+        android:padding="40dp"
+        >
+        <TextView
+            android:id="@+id/cart_item_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/cart_item_quantity"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Product Quantity"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="textEnd"
+            />
+        <TextView
+            android:id="@+id/cart_item_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Price"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/cart_item_name"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

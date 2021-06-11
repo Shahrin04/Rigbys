@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Buyer.ProductDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/p_a_image"
+            android:layout_width="0dp"
+            android:layout_height="260dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/p_a_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Product Name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/p_a_image"
+            app:layout_constraintStart_toStartOf="@+id/p_a_image"
+            app:layout_constraintTop_toBottomOf="@+id/p_a_image" />
+
+        <TextView
+            android:id="@+id/p_a_product_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Product Description"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/p_a_image"
+            app:layout_constraintStart_toStartOf="@+id/p_a_image"
+            app:layout_constraintTop_toBottomOf="@+id/p_a_product_name" />
+
+        <TextView
+            android:id="@+id/p_a_text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Price: "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/p_a_product_description"
+            app:layout_constraintTop_toBottomOf="@+id/p_a_product_description" />
+
+        <TextView
+            android:id="@+id/p_a_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="000"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/p_a_text_price"
+            app:layout_constraintTop_toBottomOf="@+id/p_a_product_description" />
+
+        <TextView
+            android:id="@+id/p_a_text_Tk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=" Tk"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/p_a_product_price"
+            app:layout_constraintTop_toBottomOf="@+id/p_a_product_description" />
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/elegant_button"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:elevation="6dp"
+            app:backGroundColor="@color/design_default_color_primary"
+            app:barrierMargin="@dimen/activity_vertical_margin"
+            app:finalNumber="10"
+            app:initialNumber="1"
+            app:layout_constraintEnd_toEndOf="@+id/p_a_product_description"
+            app:layout_constraintTop_toTopOf="@+id/p_a_product_price"
+            app:textSize="8sp">
+
+        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+        <Button
+            android:id="@+id/p_a_addToCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Add to Cart"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/p_a_product_description"
+            app:layout_constraintStart_toStartOf="@+id/p_a_product_description"
+            app:layout_constraintTop_toBottomOf="@+id/elegant_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
